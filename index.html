@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>Homework 8</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- В этот список добавляй элементы галереи -->
+    <!-- Галерея -->
     <ul class="gallery js-gallery"></ul>
 
-    <!--
-      Модальное окно для полноразмерного изображения
-      Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
-    -->
+    <!-- Модальне вікно -->
     <div class="lightbox js-lightbox">
       <div class="lightbox__overlay"></div>
 
@@ -26,7 +26,12 @@
         type="button"
         class="lightbox__button"
         data-action="close-lightbox"
-      ></button>
+        aria-label="Close lightbox"
+      >
+        <svg width="32" height="32">
+          <use href="./image/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
 
     <script src="app.js" type="module"></script>
